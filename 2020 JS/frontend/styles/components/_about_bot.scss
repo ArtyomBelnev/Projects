@@ -1,0 +1,65 @@
+.section_bottom {
+    position: relative;
+    width: 100%;
+    font-family: 'Fira500';
+    font-weight: 500;
+    margin-top: -40px;
+    color: $all-black;
+    transition: width 0.15s ease-in-out;
+}
+
+.tabs-header {
+    display: flex;
+}
+
+.tab {
+    border: 2px solid #000;
+    border-top-right-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 0;
+    transition: all 1s;
+    background-color: $all-white;
+}
+
+.tab:hover {
+    background-color: rgb(42, 74, 251);
+    opacity: 0.7;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.tab.active {
+    background-color: rgb(42, 74, 251);
+    color: $all-white;
+}
+
+.tab + .tab {
+    margin-left: 10px;
+}
+
+.tab-panel {
+    color: black;
+    border: 2px solid #000;
+    display: none;
+    padding: 10px;
+    background-color: $tab-bc;
+    transition: all 1s;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+.my_map {
+    height: 400px;
+}
+
+@media screen and (max-width: 799px) {
+    .section_bottom {
+        margin-top: 0px;
+    }
+}

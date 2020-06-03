@@ -1,0 +1,56 @@
+body {
+    min-width: 500px;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-container {
+    flex-grow: 1;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+* {
+    font-family: 'Fira400', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Fira400', sans-serif;
+}
+
+h1 {
+    font-family: 'Ubuntu400';
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+h2 {
+    font-family: 'Fira500', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.3;
+}
+h3 {
+    font-family: 'Fira500', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.3;
+}
+p {
+    font-family: 'Fira400', sans-serif;
+}
+
+span {
+    font-family: 'Fira400', sans-serif;
+}

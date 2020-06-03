@@ -1,0 +1,25 @@
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $header-bc;
+    padding: 0.7% 0;
+    font-size: 2rem;
+    color: $header-text;
+    transition: all 0.3s linear;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+.header__link {
+    margin: 0 20px;
+    transition: all 0.2s;
+    color: $header-text;
+
+    &:hover,
+    &.active {
+        color: $active-red;
+        transition: all 0.3s linear;
+    }
+}

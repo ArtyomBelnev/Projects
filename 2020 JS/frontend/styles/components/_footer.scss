@@ -1,0 +1,14 @@
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    background: $footer-bc;
+    padding: 10px 1%;
+    font-size: 1.5rem;
+}
+
+.footer__info {
+    color: $header-text;
+}

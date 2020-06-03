@@ -1,0 +1,40 @@
+<h1 class="page-title">{{task.title}}</h1>
+<div class="film content">
+	<div class="film_images">
+		<img src="{{task.img}}" alt="">
+	</div>
+	<div class="film_info">
+		<h1>ОПИСАНИЕ ФИЛЬМА</h1>
+		<div class="film_info-text">
+			<p>Дата показа:<span>{{task.inn}}</span></p>
+			<p>Страна:<span>{{task.country}}</span></p>
+			<p>Жанр:<span>{{task.genre}}</span></p>
+			<p>Хронометраж:<span>{{task.timing}}</span></p>
+			<p>В главных ролях:<span>{{task.roles}}</span></p>
+			<p>Ограничения:<span>{{task.limit}}</span></p>
+		</div>
+		<div class="film_session">
+			<div class="film_session-data">
+				<h2>Дата</h2>
+				<a class="" href="#/list/{{task.id}}/edit">{{task.date}}</a>
+			</div>
+			<div class="film_session-time">
+				<h2>Время</h2>
+				<a class="" href="#/list/{{task.id}}/edit">{{task.times}}</a>
+			</div>
+			<div class="film_session-price">
+				<h2>Цена</h2>
+				<a class="" href="#/list/{{task.id}}/edit">{{task.price}}</a>
+			</div>
+			<div class="film_session-buy">
+				<a class="film-but" href="#/list/{{task.id}}/edit">Купить</a>
+			</div>
+		</div>
+		<div class="film_info-text">
+			<p><span></span></p>
+			<p><span></span></p>
+			<p>Описание:<span>{{task.description}}</span></p>
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,120 @@
+.content-container {
+    background: url(/images/bg.jpg) no-repeat;
+    margin: 60px 1% 0 0;
+}
+
+.section {
+    &-top {
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            font-weight: 900;
+            font-size: 3rem;
+        }
+    }
+
+    &_middle {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 1% 0;
+
+        &-left {
+            max-width: 370px;
+
+            img {
+                border-radius: 10%;
+                border: 2px solid #000000;
+            }
+        }
+
+        &-right {
+            padding-left: 2%;
+
+            .smr-top {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                font-size: 15px;
+
+                p {
+                    display: flex;
+                    align-items: center;
+                    color: $all-black;
+                    white-space: nowrap;
+                    margin-bottom: 10px;
+
+                    img {
+                        margin-right: 5px;
+                        margin-left: 10px;
+                        width: 20px;
+                    }
+                }
+            }
+
+            .smr-center {
+                background-color: #fff;
+                text-align: center;
+                padding: 2%;
+                border: 2px dashed #000000;
+                border-radius: 5px;
+
+                span {
+                    color: $all-black;
+                    font-weight: 700;
+                }
+
+                .smr-info {
+                    display: flex;
+                    padding: 0.5% 0;
+
+                    .smr-info_left {
+                        display: flex;
+                        width: 100%;
+
+                        span {
+                            display: flex;
+                            white-space: nowrap;
+                            color: $all-black;
+                            font-weight: 700;
+                        }
+
+                        .smr-info_line {
+                            display: flex;
+                            width: 100%;
+                            border-bottom: 2px dotted $all-black;
+                            margin-bottom: 5px;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                        }
+                    }
+
+                    .smr-info_right {
+                        color: $all-blue;
+                        display: flex;
+                        white-space: nowrap;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .section_middle {
+        flex-direction: column;
+    }
+
+    .section_middle-left {
+        max-width: 470px;
+        margin: 0 auto;
+    }
+
+    .section-right {
+        padding-left: 0;
+    }
+}

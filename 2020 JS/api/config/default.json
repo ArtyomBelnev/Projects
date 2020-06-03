@@ -1,0 +1,13 @@
+{
+    "database": {
+        "info": "./database/info.json",
+        "movie": "./database/movie.json",
+        "movie_close": "./database/movie_close.json"
+    },
+
+    "routes": {
+        "list": "./routes/list.js",
+        "edit-check": "./routes/edit-check.js",
+        "rezult": "./routes/rezult.js"
+    }
+}

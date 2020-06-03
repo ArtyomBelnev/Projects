@@ -1,0 +1,139 @@
+.footer  {
+
+    background-color: $fon-header_footer;
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__left,
+    &__center,
+    &__right {
+        width: 33.33%;
+        display: flex;
+        align-items: center;   
+    }
+
+    &__left {
+
+        padding: 10px 20px;  
+            img {
+                width: 80px;
+            }
+
+        &_title {
+            color: #ffffff;
+            margin-left: 30px;
+            font-family: 'Fira400', sans-serif;   
+        }    
+    }
+    
+    &__right {
+        display: flex;
+        justify-content: flex-end;
+        
+        &_svg {
+            margin-right: 20px;
+
+            &:hover [fill] {
+               fill: #ff0054;
+               transition: all .3s linear;
+            }
+        }
+    }
+
+    &__center {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+
+        &_tels {
+            display: flex;
+
+        }
+        &__tel {
+            // width: 250px;
+            color: #ffffff;
+            white-space: nowrap;
+            font-family: 'Fira400', sans-serif;   
+            font-size: 16px;
+            margin-right: 15px;
+
+            &:hover{
+                color: #ff0054;
+                transition: all .3s linear;
+            }
+        }
+
+
+        
+        &__tel:nth-child(1) {
+            padding-right: 15px;
+            border-right: 1px solid #ffffff;
+        }
+        
+        
+        &__call {
+            font-family: 'Fira400', sans-serif;   
+            color: $all_raspberr;
+            margin-left: 1px;
+
+            &:hover{
+                color: #fff;
+                transition: all .3s linear;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 899px) {
+
+    .footer__left_title {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 699px) {
+
+
+
+    .footer__content {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        padding: 2% 0;
+    }
+
+    .footer__left,
+    .footer__center,
+    .footer__right {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .footer__right {
+        margin-left: 20px;
+    }
+
+    .footer__center {
+        margin: 3% 0;
+        font-size: 20px;
+         
+        &__tel {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .footer__center {
+        font-size: 16px;
+         
+        &__tel {
+            font-size: 16px;
+        }
+    }
+}

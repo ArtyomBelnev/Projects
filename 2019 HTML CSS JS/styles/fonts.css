@@ -1,0 +1,41 @@
+@font-face {
+    font-family:"Ubuntu400";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/Ubuntu/UbuntuCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family:"Fira900";
+    font-style: normal;
+    font-weight: 900;
+    src: url(/fonts/Fira/FiraSansExtraCondensed-Black.ttf);
+}
+@font-face {
+    font-family:"Fira700";
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/Fira/FiraSansExtraCondensed-Bold.ttf);
+}
+@font-face {
+    font-family:"Fira500";
+    font-style: normal;
+    font-weight: 500;
+    src: url(/fonts/Fira/FiraSansExtraCondensed-Medium.ttf);
+}
+@font-face {
+    font-family:"Fira400";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/Fira/FiraSansExtraCondensed-Regular.ttf);
+}
+@font-face {
+    font-family:"Fira300";
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/Fira/FiraSansExtraCondensed-Light.ttf);
+}
+
+
+
+

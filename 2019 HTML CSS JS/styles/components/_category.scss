@@ -1,0 +1,267 @@
+.breadcrumbs {
+    background-color: $all_greey;
+
+    &-link {
+        padding-right: 1px;
+        padding-left: 5px;
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        font-family: 'Fira500', sans-serif;
+        color: rgba(10, 10, 10, 0.8);
+    }
+    &-link:hover {
+        color: $all_red;
+    }
+}
+
+.listing {
+    
+    &__content {
+        display: flex;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5px;
+        width: 100%;
+
+    }
+
+    &-left {
+        width: 20%;
+        min-width: 220px;
+        margin-right: 1%;
+    }
+
+    .sidebar {
+        padding-right: 5px;
+        
+        &__title {
+            display: flex;
+            justify-content: center;
+            padding: 5px 5px;
+            font-size: 1.2rem;
+            font-family: 'Fira700', sans-serif;
+            line-height: 1.6rem;
+            color: #111111;
+        }
+    
+        &__options {
+
+            &-item {
+                margin-top: 5px;
+                display: flex;
+                justify-content: space-between;
+                
+                a {
+                    font-size: 1.1rem;
+                    line-height: 1.6rem;
+                    font-family: 'Fira500', sans-serif;
+                    color: #000000;
+
+                    &:nth-child(2) {
+                        color: $all_raspberr;
+                    }
+                }
+
+            }
+
+            
+            &-list {
+                background-color: $all_greey;
+                border-radius: 5px;
+
+                a {
+                display: flex;
+                border-style: none;
+                border-radius: 6px;
+                margin: 5px;
+                padding-left: 15px;
+                font-family: 'Fira700', sans-serif;
+                background-size: 20%;
+                font-size: 1.2rem;
+                height: 20px;
+                width: 40px;
+                cursor: pointer;
+
+                img {
+                    width: 8px;
+                    margin-right: 2px;
+                }
+            }
+        }
+
+            &-price {
+                display: flex;
+                justify-content: space-between;
+                margin: 20px 5px;
+
+                 
+                a {
+                    font-size: 1rem;
+                    line-height: 1.6rem;
+                    font-family: 'Fira500', sans-serif;
+                    color: #000000;
+                }
+
+                .info img  {
+                    margin-left: 5px;
+                    width: 15px;
+                }
+
+
+            &_list {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                input {
+                    border-radius: 5px;
+                    width: 50px;
+                    padding-left: 5px;
+                    margin: 0 10px;
+                    font-size: 1.1rem;
+                    line-height: 1.1rem;
+                    font-weight: 300;
+
+                    &:focus {
+                        border: 2px solid #000000;
+                    }
+                }
+
+                label {
+                    color: $all_greey;
+                }
+            }
+
+            &__polzun {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+            &-button {
+                display: flex;
+                justify-content: center;
+                
+                button {
+                    border-radius: 10px;
+                    font-family: 'Fira700', sans-serif;
+                    padding: 5px 10px;
+                    box-shadow: none;
+                    color: #fff;
+                    background-color: $all_red;
+                    border: 1px solid $all_red;
+                    transition: 0.5s linear;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color:#fff;
+                        color: #000000;
+                        transition: 0.5s linear;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.listing-left_one {
+    display: none;
+}
+
+#r1 {
+    cursor: grabbing;
+}
+@media screen and (max-width:899px) {
+    .breadcrumbs {
+        margin-top: 50px;
+
+        &-link {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:699px) {
+    .breadcrumbs {
+        display: none;
+    }
+    .listing-top {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    .listing__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .listing-left {
+        display: none;
+    }
+
+    .listing-left_one {
+        display: flex;
+        width: 100%;
+        border: 1px solid #cccccc;
+        margin-bottom: 20px;
+
+        img {
+            width: 40px;
+        }
+
+        a {
+                    line-height: 1.2rem;
+                    font-family: 'Fira500', sans-serif;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    color: rgb(63, 51, 51);
+                    padding: 10px 5px;
+                    cursor: pointer;
+        }
+
+        .aside_one1 {
+            width: 50%;
+            border-right: 1px solid #cccccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f3e5e5;
+
+        }
+
+        .aside_one2 {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+            text-align: right;
+            align-items: center;
+            background-color: #aca1a1;
+        }
+    }
+}
+
+@media screen and (max-width:536px) {
+    .listing-left_one {
+
+        a {
+            font-size: 1.2rem;  
+        }
+
+        img {
+            width: 20px;
+        }
+    }   
+}
+
+@media screen and (max-width:399px) {
+    .listing-left_one {
+        
+        a {
+            font-size: 0.9rem; 
+        }
+    }   
+}

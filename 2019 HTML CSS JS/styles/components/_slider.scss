@@ -1,0 +1,41 @@
+.swiper {
+    margin-top: 20px;
+    &-wrapper {
+        text-align: center;
+
+    }
+
+    img {
+        width: 1200px;
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 899px) {
+    .swiper {
+        margin-top: 70px;
+        &-wrapper {
+            text-align: center;
+        }
+    
+        img {
+            width: 1200px;
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .swiper {
+        margin-top: 90px;
+        &-wrapper {
+            text-align: center;
+        }
+    
+        img {
+            width: 1200px;
+            max-width: 100%;
+        }
+    }
+}

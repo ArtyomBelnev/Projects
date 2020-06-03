@@ -1,0 +1,139 @@
+.listing-content {
+    width: 80%;
+}
+
+.listing-right {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    
+    img {
+        max-width: 100%;
+    }
+    &__card {
+        background-color: #ffffff;
+        width: 33.3333%;
+        border: 1px solid #ccc;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        
+        &:hover {
+            box-shadow: 0 0 16px rgba(0,0,0,.5);
+            transition: all .3s linear;
+        }
+
+    & a:first-child {
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        width: 92px;
+        text-align: center;
+        font-size: 11px;
+        font-family: 'Fira900', sans-serif;
+        display: flex;
+        align-items: center;
+        background: #d6ddc4;
+        border-radius: 20px;
+        color: green;
+
+        img {
+            max-width: 100px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        color: #22242c;
+        font-size: 18px;
+        line-height: 1.5rem;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-family: 'Fira500', sans-serif;
+        flex-grow: 1;
+    }
+    
+    &__price_list{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        
+    }
+
+    .listing-right-price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__old {
+        color: #22242c;
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: line-through;
+        }
+
+        &__new {
+            color: #22242c;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        &__img {
+            &:hover [fill] {
+                fill: #ff0054;
+                transition: all .3s linear;
+            }
+        }
+    }
+}
+}
+
+@media screen and (max-width:899px) {
+    .listing-right__card {
+        width: 50%;
+
+        &__title {
+            line-height: 1.1rem;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            flex-grow: 1;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width:699px) {
+
+    .listing-right__card a:first-child {
+   
+        img {
+            max-width: 30px;
+        }
+    }
+    .listing-content {
+        width: 100%;
+    }
+
+
+
+    .listing-right__card {
+        width: 50%;
+
+        &__title {
+            line-height: 1.1rem;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            flex-grow: 1;
+            text-align: center;
+        }
+    }
+    
+    .listing-left_one {
+        display: flex;
+    }
+}
+
+

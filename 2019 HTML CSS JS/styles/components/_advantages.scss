@@ -1,0 +1,85 @@
+.advantages {
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    &__content {
+        display: flex;
+    }
+
+    &__card {
+        width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    &__title {
+        margin-top: 20px;
+        font-family: 'Fira700', sans-serif;
+        color: #fff;
+        text-align: center;
+        font-size: 1.7rem;
+        line-height: 2.2rem;
+        width: 250px;
+    }
+
+    &__button {
+        @include button (300px, 50px, 1.4rem);
+    }
+}
+
+@media screen and (max-width: 899px) {
+    
+    .advantages__button {
+        width: 200px;
+        font-size: 1.1rem;
+    }
+
+    .advantages__img img {
+        width: 100px;
+    }
+
+    .advantages__title {
+        font-size: 1.2rem;
+        padding: 0px 10px;
+        font-family: 'Fira700', sans-serif;
+        color: #fff;
+        line-height: 1.2rem;
+        width: 230px;
+    }
+}
+
+@media screen and (max-width: 699px) {
+
+    .advantages__img img {
+        width: 100px;
+    }
+
+    .advantages__title {
+        font-size: 1rem;
+        padding: 0px 10px;
+        font-family: 'Fira500', sans-serif;
+        color: #fff;
+        line-height: 1rem;
+        width: 150px; 
+    }
+}
+
+@media screen and (max-width: 499px) {
+
+    .advantages__img img {
+        width: 70px;
+    }
+    
+    .advantages__title {
+        font-size: 0.8rem;
+        padding: 0px 1px;
+        font-family: 'Fira700', sans-serif;
+        color: #fff;
+        line-height: 1rem;
+        width: 105px;
+    }   
+}

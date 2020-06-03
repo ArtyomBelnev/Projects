@@ -1,0 +1,20 @@
+@mixin button ($width, $height, $font-size ) {
+    width: $width;
+    height: $height;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fira700', sans-serif;
+    background-color: $all_red;
+    color: #fff;
+    font-size: $font-size;
+    transition: 0.5s linear;
+    cursor: pointer;
+        
+        &:hover {
+            background-color: #fff;
+            color: #000; 
+            transition: 0.5s linear;
+        }
+}

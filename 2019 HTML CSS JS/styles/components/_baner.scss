@@ -1,0 +1,54 @@
+.baner {
+    margin-top: 50px;
+
+    &__one-content {
+        display: none;
+    }
+    
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__content {
+        display: flex;
+        width: 100%;
+
+        &_card {
+            display: flex;
+            justify-content: center;
+            border: 1px solid #cccccc;
+            background-color: #ffffff;
+            height: 80px;
+            width: 14.28%;
+
+            &:hover {
+                transition: all .3s linear;
+                background-color: #cccccc;
+            }   
+        }
+    }
+}
+
+@media screen and (max-width: 899px) {
+
+    .baner__content {
+        display: none;
+    }
+
+    .baner {
+        margin-top: 50px;
+        margin-right: -1%;
+        margin-left: -1%;
+    }
+
+    .baner__one {
+        overflow-x: auto;
+        width: 100%;  
+        
+    &-content {
+        display: flex;
+        width: 1200px;
+        }
+    }
+}
